@@ -14,17 +14,25 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+
+    <!--NavBAR-->
     <nav>
       <div class="nav-center">
         <!--nav header-->
         <div class="nav-header">
-          <img src="images/logo.svg" class="logo" alt="logo"/>
+          <!-- <img src="images/logo.svg" class="logo" alt="logo"/> -->
+          <ul class="links logo">
+            <li>
+              <a href="index.html">Abhishek</a>
+            </li>
+          </ul>
+          
           <button class="nav-toggle">
             <i class="fas fa-bars"></i>
           </button>
         </div>
         <!-- links -->
-        <ul class="links">
+        <ul class="links show-links">
           <li>
             <a href="index.html">home</a>
           </li>
@@ -39,20 +47,162 @@
           </li>
         </ul>
         <!-- social media -->
-        <ul class="social-icons">
+        <ul class="social-icons ">
           <li>
-            <a href="https://www.linkedin.com/in/abhishek-kumar-130143168/"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.linkedin.com/in/abhishek-kumar-130143168/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
           </li>
           <li>
-            <a href="https://github.com/abhishek540"><i class="fab fa-github"></i></a>
+            <a href="https://github.com/abhishek540" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
           </li>
           <li>
-            <a href="https://dribbble.com/blurred_buddha"><i class="fab fa-dribbble"></i></a>
+            <a href="https://dribbble.com/blurred_buddha" target="_blank" rel="noopener noreferrer"><i class="fab fa-dribbble"></i></a>
           </li>
 
         </ul>
       </div>
     </nav>
+    <main>
+      <!--intro page-->
+      <div class="container">
+        <img src="images/profile pic.png" class="profile" alt="profile"/>
+        <h2>ABHISHEK KUMAR</h2>
+        <!-- <div class="underline"></div> -->
+        <h4>CSE-JUNIOR UNDERGRAD</h4>
+        <h5>NATIONAL INSTITUTE OF TECHNOLOGY, HAMIRPUR</h5>
+        <button class="btn btn-resume" id="btn-resume"><a href="images/resume.pdf" target="_blank" rel="noopener noreferrer">RESUME</a></button>
+        <button class="btn btn-hero" id="btn-change">COLOR</button>
+      </div>
+      <!--about me-->
+      <div class="container about">
+        <div class="title">
+          <h3>ABOUT ME</h3>
+          <div class="underline"></div>
+        </div>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      </div>
+       <!--skills-->
+       <div class="container skills">
+        <div class="title">
+          <h3>SKILLS</h3>
+          <div class="underline"></div>
+        </div>
+            <p>Language</p>
+            <h5>Python, C++, R, SQl,Javascript,Shell</h5>
+            <div class="hr"></div>
+            <p>Tools&Technology</p>
+            <h5>Matalab,Scikit, Web-Scraping, Image Prcoessing, Data Analytics</h5>
+       </div>
+      <!--work-->
+      <div class="title">
+        <h3>WORK</h3>
+        <div class="underline"></div>
+      </div>
+      <div class="container work">
+        <div class="work-div data">
+          <div class="pic"><img src="images/data_pic.png" class="img" alt="data"/></div>
+          <div class="desc">
+            <h3><u>Data Analysis</u></h3>
+            <h4>Language</h4>
+            <p>Python,R,SQL</p>
+            <h4>Tools&Tech</h4>
+            <p>Scikit, Web Deployment, Web Scraping</p>
+            <button class="btn btn-resume" id="btn-resume"><a href="images/resume.pdf" target="_blank" rel="noopener noreferrer">READ</a></button>
+          </div>
+        </div>
+        <div class="work-div data">
+          <div class="pic"><img src="images/frontend_pic.png" class="img" alt="data"/></div>
+          <div class="desc">
+            <h3><u>Front End</u></h3>
+            <h4>Language</h4>
+            <p>HTML, CSS, JAVASCRIPT</p>
+            <h4>Tools&Tech</h4>
+            <p>VS CODE,DOM</p>
+            <button class="btn btn-resume" id="btn-resume"><a href="images/resume.pdf" target="_blank" rel="noopener noreferrer">READ</a></button>
+          </div>
+        </div>
+        <div class="work-div data">
+          <div class="pic"><img src="images/graphics_pic.png" class="img" alt="data"/></div>
+          <div class="desc">
+            <h3><u>GRAPHICS</u></h3>
+            <h4>TOOLS</h4>
+            <p>ADOBE CREATIVE SUITE</p>
+            <h4>Tech</h4>
+            <p>Photoshop,Illustrator,XD, Animate</p>
+            <button class="btn btn-resume" id="btn-resume"><a href="images/resume.pdf" target="_blank" rel="noopener noreferrer">READ</a></button>
+          </div>
+        </div>
+      </div>
+      <!--Education-->
+      <div class="container education">
+        <div class="title">
+          <h3>EDUCATION</h3>
+          <div class="underline"></div>
+        </div>
+        <p>2018-PRESENT</p>
+        <h5>National Institute of Technology<br>Hamirpur</h5>
+        <p class="text">Integrated BTech+MTech in Computer Science & Engineering, <i>CGPA: 8.08</i></p>
+        <div class="hr"></div>
+        <p>2015-17</p>
+        <h5>St. Michael's High School<br>Digha Ghat, Patna</h5>
+        <p class="text">Higher Secondary, <i>Percentage: 85%</i></p>
+        <div class="hr"></div>
+        <p>2009-2015</p>
+        <h5>Ramakrishna Mission Vidyalaya<br>Narendrapur, Kolkata</h5>
+        <p class="text">High School, <i>Percentage: 92%</i></p>
+      </div>
+      <!--VOLUNTEER-->
+        <section class="container-review">
+            <!-- title -->
+            <div class="title">
+              <h3>Volunteer work</h3>
+              <div class="underline"></div>
+            </div>
+                <!-- review -->
+            <article class="review">
+                <div class="img-container">
+                  <img src="person-1.jpeg" id="person-img" alt="" />
+                </div>
+                <h4 id="author">sara jones</h4>
+                <p id="job">ux designer</p>
+                <p id="info">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                  asperiores debitis incidunt, eius earum ipsam cupiditate libero?
+                  Iste, doloremque nihil?
+                </p>
+                <button class="btn btn-resume btn-reviews" id="btn-resume"><a href="https://hpathletics.in/" target="_blank" rel="noopener noreferrer" id="volunteer">KNOW MORE</a></button>
+                <!-- prev next buttons-->
+                <div class="button-container">
+                  <button class="prev-btn">
+                    <i class="fas fa-chevron-left"></i>
+                  </button>
+                  <button class="next-btn">
+                    <i class="fas fa-chevron-right"></i>
+                  </button>
+                </div>
+            </article>
+      </section>
+        
+    </main>
+
+   <!--footer--------------->
+   <footer>
+    <!--heading-->
+      <p>ABOUT THIS PAGE</p>
+          <!--paragraph-->
+      <p>This website was coded in HTML, CSS, and Javascript. It is hosted on Github. You can find code <a href="https://github.com/abhishek540" >here</a>.</p>
+          <!--social-->
+          <div class="social-icons">
+              <a href="https://www.linkedin.com/in/abhishek-kumar-130143168/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://github.com/abhishek540" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+              <a href="https://www.kaggle.com/blurred8216" target="_blank" rel="noopener noreferrer"><i class="fab fa-kaggle"></i></a>
+              <a href="https://dribbble.com/blurred_buddha" target="_blank" rel="noopener noreferrer"><i class="fab fa-dribbble"></i></a>
+          </div>
+              <!--copyright-->
+      <p class="copyright">Copyright by Abhishek Kumar</p>
+    </footer>
+
+
+    
     <!-- javascript -->
     <script src="app.js"></script>
   </body>
