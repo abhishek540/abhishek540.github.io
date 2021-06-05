@@ -20,39 +20,39 @@ navToggle.addEventListener("click",function(){
 });
 
 //for BACKGROUND----------------------------------------------------
-// const hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
-// const btn = document.getElementById("btn-change");
-// const color = document.querySelector(".color");
+const hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
+const btn = document.getElementById("btn-change");
+const color = document.querySelector(".color");
 
-// btn.addEventListener("click", function(){
-//     let hexColor = "#";
-//     for (let i=0;i<6;i++){
-//         //getRandomNumber():
-//         hexColor +=hex[getRandomNumber()];
-//     }
-//    // color.textContent = hexColor;
-//    // color.style.color = hexColor;
-//     document.body.style.background = hexColor;
-// });
+btn.addEventListener("click", function(){
+    let hexColor = "#";
+    for (let i=0;i<6;i++){
+        //getRandomNumber():
+        hexColor +=hex[getRandomNumber()];
+    }
+   // color.textContent = hexColor;
+   // color.style.color = hexColor;
+    document.body.style.background = hexColor;
+});
 
-// function getRandomNumber(){
-//      return Math.floor(Math.random()*hex.length);
-//  }
- const colors = ["#f3a683","#f7d794","#778beb","#e77f67","#cf6a87","#f19066","#f5cd79","#546de5","#e15f41","#c44569","#786fa6","#f8a5c2","#63cdda","#ea8685","#596275","#574b90","#f78fb3","#3dc1d3","#e66767","#303952"];
- const btn = document.getElementById("btn-change");
- const color = document.querySelector(".color");
- 
- btn.addEventListener("click", function(){
-     //get random number between 0-3
-     const randomNumber = getRandomNumber();
-    // console.log(randomNumber);
-     document.body.style.backgroundColor = colors[randomNumber];
-     //color.textContent = colors[randomNumber];
- });
- 
- function getRandomNumber(){
-     return Math.floor(Math.random() * colors.length);
+function getRandomNumber(){
+     return Math.floor(Math.random()*hex.length);
  }
+//  const colors = ["#f3a683","#f7d794","#778beb","#e77f67","#cf6a87","#f19066","#f5cd79","#546de5","#e15f41","#c44569","#786fa6","#f8a5c2","#63cdda","#ea8685","#596275","#574b90","#f78fb3","#3dc1d3","#e66767","#303952"];
+//  const btn = document.getElementById("btn-change");
+//  const color = document.querySelector(".color");
+ 
+//  btn.addEventListener("click", function(){
+//      //get random number between 0-3
+//      const randomNumber = getRandomNumber();
+//     // console.log(randomNumber);
+//      document.body.style.backgroundColor = colors[randomNumber];
+//      //color.textContent = colors[randomNumber];
+//  });
+ 
+//  function getRandomNumber(){
+//      return Math.floor(Math.random() * colors.length);
+//  }
 
 // local reviews data
 const reviews = [
@@ -75,7 +75,7 @@ const reviews = [
         "https://hpathletics.in/static/HPsite/logo.jpg",
       text:
         "Helvetica artisan kinfolk thundercats lumbersexual blue bottle. Disrupt glossier gastropub deep v vice franzen hell of brooklyn twee enamel pin fashion axe.photo booth jean shorts artisan narwhal.",
-        button:
+      button:
         "https://hpathletics.in/",
     },
     {
@@ -86,7 +86,7 @@ const reviews = [
         "https://github.com/abhishek540/Automatic-Hand-Sanitizer-Dispenser-with-Alarm-Temp/raw/master/images/newspaper.jpg",
       text:
         "Sriracha literally flexitarian irony, vape marfa unicorn. Glossier tattooed 8-bit, fixie waistcoat offal activated charcoal slow-carb marfa hell of pabst raclette post-ironic jianbing swag.",
-        button:
+      button:
         "https://github.com/abhishek540/Automatic-Hand-Sanitizer-Dispenser-with-Alarm-Temp/tree/master",
     },
     {
@@ -97,7 +97,7 @@ const reviews = [
         "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883423/person-4_t9nxjt.jpg",
       text:
         "Edison bulb put a bird on it humblebrag, marfa pok pok heirloom fashion axe cray stumptown venmo actually seitan. VHS farm-to-table schlitz, edison bulb pop-up 3 wolf moon tote bag street art shabby chic. ",
-        button:
+      button:
         "KNOW MORE",
     },
   ];
@@ -122,7 +122,7 @@ const reviews = [
     author.textContent = item.name;
     job.textContent = item.job;
     info.textContent = item.text;
-    btn.href = item.button;
+    button.href = item.button;
   });
   
   // show person based on item
@@ -132,7 +132,7 @@ const reviews = [
     author.textContent = item.name;
     job.textContent = item.job;
     info.textContent = item.text;
-    btn.href = item.button;
+    button.href = item.button;
   }
   // show next person
   nextBtn.addEventListener("click", function () {
