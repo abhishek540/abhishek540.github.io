@@ -241,12 +241,12 @@ form
 ========================
 -------------------*/
 .form{
-  background-color: var(--clr-grey-10));
   box-shadow:2px 2px 12px rgba(0,0,0,0.2);
   padding: 5%;
   margin: 5%;
   align-items: center;
   text-align: center;
+  background-color: var(--clr-grey-10);
 }
 .btn-hero {
   font-family: var(--ff-primary);
@@ -410,7 +410,20 @@ footer a{
   } */
 
 }
-
+.btn-color{
+	position: fixed;
+	top:50%;
+	right:0px;
+  height: 40px;
+  width: 40px;
+	transform:translateY(-50%);
+  border-radius:50%;
+  background-color:var(--clr-grey-5);
+  border:0px;
+  margin-right: 20px;
+}
+.btn-color:hover{
+  
 
 
 

@@ -276,6 +276,7 @@ container
     padding:10%;
     margin: 2.5%;
     text-align: center;
+    background-color: var(--clr-grey-10);
   }
 
   /* .pic{
@@ -435,7 +436,21 @@ footer a{
   }
 
 }
-
+.btn-color{
+	position: fixed;
+	top:50%;
+	right:0px;
+  height: 40px;
+  width: 40px;
+	transform:translateY(-50%);
+  border-radius:50%;
+  background-color:var(--clr-grey-5);
+  border:0px;
+  margin-right: 20px;
+}
+.btn-color:hover{
+  box-shadow:2px 2px 12px rgba(0,0,0,0.2);
+}
 
 
 
