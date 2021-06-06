@@ -63,7 +63,7 @@ const reviews = [
       img:
         "./images/pixo_logo.png",
       text:
-        "I'm baby meggings twee health goth +1. Bicycle rights tumeric chartreuse before they sold out chambray pop-up. Shaman humblebrag pickled coloring book salvia hoodie, cold-pressed four dollar toast everyday carry",
+        "Volunteered in the creative and media club, Pixonoids as co-coordinator. Successfully coordinated the communication between the Tech-Fest team and the graphics team. Apart from this, I have mentored over 50 freshers to become familiar with illustrator and Photoshop.  Designed many graphics, posters, and flex for various events and sponsors. ",
       button:
         "https://www.youtube.com/user/pixonoids",
     },
@@ -74,7 +74,7 @@ const reviews = [
       img:
         "./images/hp_logo.jpg",
       text:
-        "Helvetica artisan kinfolk thundercats lumbersexual blue bottle. Disrupt glossier gastropub deep v vice franzen hell of brooklyn twee enamel pin fashion axe.photo booth jean shorts artisan narwhal.",
+        "Enlisted to design the Front-End of the Himachal Pradesh Athletics Association (HPAA). Post-Covid, this website acts as the only channel of communication between athletes and event managers. It is a regional-level organization that monitors the ground-level growth of budding athletes.",
       button:
         "https://hpathletics.in/",
     },
@@ -85,7 +85,7 @@ const reviews = [
       img:
         "./images/new_pic.jpg",
       text:
-        "Sriracha literally flexitarian irony, vape marfa unicorn. Glossier tattooed 8-bit, fixie waistcoat offal activated charcoal slow-carb marfa hell of pabst raclette post-ironic jianbing swag.",
+        "An IoT-based Automatic Hand Sanitiser Dispenser is developed that is also able to detect human temperature. A project which was initiated for class assignment is now serving around 200 people in 2 state-based government organization named HIMUDA. We have also successfully installed it in our 3 college departments.",
       button:
         "https://github.com/abhishek540/Automatic-Hand-Sanitizer-Dispenser-with-Alarm-Temp/tree/master",
     },
