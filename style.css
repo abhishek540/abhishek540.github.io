@@ -414,6 +414,8 @@ EDUCATION
 } */
 .education p{
   margin-top : 10%;
+  line-height: 2;
+
 }
 p.text{
   margin-top : 2.5%;
@@ -722,6 +724,7 @@ footer a{
   .about{
     padding: 5%;
   }
+
 
   /* .footer{
     width:100vh;
