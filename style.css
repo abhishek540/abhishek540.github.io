@@ -332,8 +332,8 @@ SKILLS
   font-size: 1.50rem;
 }
 .hr{
-  height: 2px;
-  width: 30rem;
+  height: 0.05vw;
+  width: 75vw;
   background: var(--clr-grey-7);
   margin-left: auto;
   margin-right: auto;
