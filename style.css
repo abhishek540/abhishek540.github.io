@@ -73,7 +73,7 @@ body {
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
- 
+  width:100vw;
 }
 body::-webkit-scrollbar{
   display: none;
@@ -135,6 +135,7 @@ p {
   }
   body {
     font-size: 1rem;
+  
   }
   h1,
   h2,
@@ -155,9 +156,9 @@ p {
   margin: 0 auto;
   max-width: 1170px;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1000px) {
   .section-center {
-    width: 95vw;
+    width:100vw;
   }
   
 }
@@ -173,7 +174,6 @@ Navbar
 ===============
 */
 nav {
-  width:100vw;
   background: var(--clr-white);
   box-shadow: var(--light-shadow);
 }
@@ -197,8 +197,13 @@ nav {
 }
 .logo {
   height: 40px;
+  color: var(--clr-grey-3);
+  text-transform: capitalize;
+  letter-spacing: var(--spacing);
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: var(--transition);
 }
-
 .links a {
   color: var(--clr-grey-3);
   font-size: 1rem;
@@ -230,9 +235,10 @@ Container
 ===============
 */
 main {
-  min-height: calc(100vh - 3rem);
+  min-height: 100vh;
   display: grid;
   place-items: center;
+  width:100vw;
 }
 .container {
   text-align: center;
@@ -292,7 +298,7 @@ ABOUT ME
 .about{
   padding: 8%;
   background: var(--clr-grey-10);
-  margin: 5%;
+  margin-top:10%;
 }
 /*-----------------
 ====================
@@ -339,12 +345,12 @@ WORK
 -------------------*/
 
 .work {
-  width: auto*1.5;
+  width: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 450px ;
   grid-gap: 1rem;
-  margin: 10%;
+  margin: 5%;
   margin-bottom:40px;
   align-items:center;
   /* margin: 5%; */
@@ -426,11 +432,6 @@ p.text{
 Reviews
 ===============
 */
-main {
-  min-height: 100vh;
-  display: grid;
-  place-items: center;
-}
 .title {
   text-align: center;
   margin-bottom: 2rem;
@@ -445,7 +446,7 @@ main {
 .container-review {
   width: 80vw;
   max-width: var(--fixed-width);
-  margin: 10%;
+
 }
 .review {
   background: var(--clr-white);
@@ -454,6 +455,7 @@ main {
   box-shadow: var(--light-shadow);
   transition: var(--transition);
   text-align: center;
+  margin-bottom: 10%;;
 }
 .review:hover {
   box-shadow: var(--dark-shadow);
@@ -623,7 +625,7 @@ footer a{
 
 @media screen and (min-width: 800px) {
   .nav-center {
-    max-width: 1170px;
+    width: auto;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -660,22 +662,14 @@ footer a{
   .social-icons a:hover {
     color: var(--clr-primary-7);
   }
-  /* .section {
-    padding: 5rem 0;
-  }
-  
-  .section-center {
-    width: 90vw;
-    margin: 0 auto;
-    max-width: 1170px;
-  } */
+
 
 
 }
 
 @media screen and (max-width: 700px){
   .work {
-    grid-template-columns: 300px;
+    grid-template-columns: 100vw;
     grid-template-rows: 1fr 1fr 1fr ;
     grid-gap: 1rem;
 
@@ -694,6 +688,44 @@ footer a{
     grid-column: 1 / 2;
   
   }
+  .nav-center,
+  {
+    width:100vw;
+    margin: 5%;;
+  }
+  nav{
+    width: auto;
+
+  }
+  .container{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-top: 10px;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 10px;
+    width: 95vw;
+
+  }
+  main{
+    width: 98vw;
+    margin-right:05px;
+    margin-left: 05px; 
+  }
+  .work-div{
+    width:70%;
+    margin: auto;
+    
+  }
+  .about{
+    padding: 5%;
+  }
+
+  /* .footer{
+    width:100vh;
+  } */
 
 }
 

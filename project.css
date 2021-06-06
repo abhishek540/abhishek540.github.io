@@ -168,7 +168,6 @@ Navbar
 ===============
 */
 nav {
-  width:100vw;
   background: var(--clr-white);
   box-shadow: var(--light-shadow);
 }
@@ -192,8 +191,13 @@ nav {
 }
 .logo {
   height: 40px;
+  color: var(--clr-grey-3);
+  text-transform: capitalize;
+  letter-spacing: var(--spacing);
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: var(--transition);
 }
-
 .links a {
   color: var(--clr-grey-3);
   font-size: 1rem;
@@ -413,8 +417,52 @@ footer a{
   } */
 
 }
+@media screen and (min-width: 800px) {
+  .nav-center {
+    width: auto;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .nav-header {
+    padding: 0;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .links {
+    height: auto;
+    display: flex;
+  }
+  .links a {
+    padding: 0;
+    margin: 0 0.5rem;
+  }
+  .links a:hover {
+    padding: 0;
+    background: transparent;
+  }
+
+  .social-icons {
+    display: flex;
+  }
+  .social-icons a {
+    margin: 0 0.5rem;
+    color: var(--clr-primary-5);
+    transition: var(--transition);
+  }
+  .social-icons a:hover {
+    color: var(--clr-primary-7);
+  }
+
+
+
+}
 @media screen and (max-width: 700px){
   .container {
+    width: auto;
     grid-template-columns: 300px;
     grid-template-rows: 1fr 1fr 1fr ;
     grid-gap: 1rem;
@@ -434,6 +482,12 @@ footer a{
     grid-column: 1 / 2;
   
   }
+  /* .main{
+    width:100vw;
+  }
+  .body{
+    width: 100vw;
+  } */
 
 }
 .btn-color{
